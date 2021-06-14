@@ -1,0 +1,27 @@
+
+
+body {
+    background-color: rgb(240, 229, 217);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+#quote-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+    width: 60em;
+
+    background-color: aliceblue;
+    color: rgb(38, 104, 82);
+}
+
