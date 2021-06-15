@@ -2,22 +2,24 @@ import './App.css'
 import {FaTwitter} from "react-icons/fa"
 import QuotesList from './QuotesList.json'
 
-let firstQuote = QuotesList[2].quote
+let randomizer = Math.floor(Math.random() * 10);
+let firstQuote = QuotesList[randomizer].quote
+let firstAuthor = QuotesList[randomizer].author
 
 const Text = (props) => {
   return (
     
       <h2 id="text">
-        {props.quote}
+        "{props.quote}"
       </h2>
    
   )
 }
 
-const Author = () => {
+const Author = (props) => {
   return(
     <div>
-      <h3 id="author">Zig Ziglar</h3>
+      <h3 id="author">{props.author}</h3>
     </div>
   )
 }
@@ -30,7 +32,7 @@ function App() {
 
       <div id="quote-box">
         <Text quote={firstQuote} />
-        <Author />
+        <Author author={firstAuthor} />
         <div className="bottom-spaceout"> 
           <a id="tweet-quote"><FaTwitter/ > </a>
           <button id="new-quote">new quote</button>  

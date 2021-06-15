@@ -39,5 +39,15 @@
         "id": 8,
         "quote": "Learning never exhausts the mind.",
         "author": "Leonardo de Vinci"
+    },
+    {
+        "id": 9,
+        "quote": "If you cannot do great things, do small things in a great way.",
+        "author": "Napoleon Hill"
+    },
+    {
+        "id": 10,
+        "quote": "Permanence, perseverance and persistence in spite of all obstacles, discouragements, and impossibilities: It is this, that in all things distinguishes the strong soul from the weak.",
+        "author": "Thomas Carlyle"
     }
 ]
