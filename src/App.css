@@ -7,6 +7,9 @@ body {
     align-items: center;
     flex-direction: column;
     box-sizing: border-box;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+    height: 100vh;
 }
 
 .container h1 {
@@ -14,14 +17,14 @@ body {
 }
 
 #quote-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 70vh;
-    width: 60em;
+    position: relative;
+
 
     background-color: aliceblue;
     color: rgb(38, 104, 82);
 }
 
+#author {
+    color: red;
+    text-align: right;
+}

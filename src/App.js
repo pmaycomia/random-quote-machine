@@ -15,7 +15,7 @@ const Text = () => {
 const Author = () => {
   return(
     <div>
-      <h3>Zig Ziglar</h3>
+      <h3 id="author">Zig Ziglar</h3>
     </div>
   )
 }
@@ -29,7 +29,9 @@ function App() {
       <div id="quote-box">
         <Text />
         <Author />
+        <i>twitter icon goes here</i>
         <button>new quote</button>
+        
       </div>
     </div>
   );
