@@ -1,7 +1,7 @@
 
 
 body {
-    background-color: rgb(112, 103, 112);
+    background-color: rgb(196, 140, 196);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,10 +18,10 @@ body {
 
 #quote-box {
     position: relative;
-
-
     background-color: aliceblue;
     color: rgb(38, 104, 82);
+    padding: 35px;
+    font-size: 1.5em;
 }
 
 #author {
