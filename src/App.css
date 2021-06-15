@@ -8,8 +8,8 @@ body {
     flex-direction: column;
     box-sizing: border-box;
     font-weight: 400;
-    font-family: "Raleway", sans-serif;
-    height: 100vh;
+    font-family: 'Permanent Marker', cursive;
+    height: 90vh;
 }
 
 .container h1 {
@@ -27,4 +27,14 @@ body {
 #author {
     color: red;
     text-align: right;
+}
+
+.bottom-spaceout {
+    display: flex;
+    justify-content:space-between
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
 }

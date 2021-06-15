@@ -1,5 +1,5 @@
 import './App.css'
-
+import {FaTwitter} from "react-icons/fa"
 
 
 const Text = () => {
@@ -29,9 +29,15 @@ function App() {
       <div id="quote-box">
         <Text />
         <Author />
-        <i>twitter icon goes here</i>
-        <button>new quote</button>
+        <div className="bottom-spaceout"> 
+          <a id="tweet-quote"><FaTwitter/ > </a>
+          <button>new quote</button>  
+        </div>
         
+        
+      </div>
+      <div className="footer">
+        <h4>pmayc</h4>
       </div>
     </div>
   );
