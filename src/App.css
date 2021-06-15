@@ -1,7 +1,7 @@
 
 
 body {
-    background-color: rgb(240, 229, 217);
+    background-color: rgb(112, 103, 112);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,13 +25,38 @@ body {
 }
 
 #author {
-    color: red;
+    color: rgb(61, 61, 61);
     text-align: right;
 }
 
 .bottom-spaceout {
     display: flex;
     justify-content:space-between
+}
+
+#tweet-quote {
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: rgb(59, 134, 134);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#tweet-quote:hover {
+    cursor: pointer ;
+}
+
+#new-quote {
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: rgb(59, 134, 134);
+    border: transparent;
+}
+
+#new-quote:hover {
+    cursor: pointer ;
 }
 
 .footer {

@@ -1,12 +1,14 @@
 import './App.css'
 import {FaTwitter} from "react-icons/fa"
+import QuotesList from './QuotesList.json'
 
+let firstQuote = QuotesList[2].quote
 
-const Text = () => {
+const Text = (props) => {
   return (
     
       <h2 id="text">
-        "If you can dream it, you can achieve it."
+        {props.quote}
       </h2>
    
   )
@@ -27,11 +29,11 @@ function App() {
       <h1>Random Quote Generator</h1>    
 
       <div id="quote-box">
-        <Text />
+        <Text quote={firstQuote} />
         <Author />
         <div className="bottom-spaceout"> 
           <a id="tweet-quote"><FaTwitter/ > </a>
-          <button>new quote</button>  
+          <button id="new-quote">new quote</button>  
         </div>
         
         
