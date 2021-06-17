@@ -6,16 +6,18 @@ import QuotesList from './QuotesList.json'
 
 
 const Text = (props) => {
-  return (    
+  return (
+    <div className="text-container">
       <h2 id="text">
         "{props.quote}"
       </h2>   
+      </div>    
   )
 }
 
 const Author = (props) => {
   return(
-    <div>
+    <div className="author-container">
       <h3 id="author">{props.author}</h3>
     </div>
   )
@@ -41,18 +43,24 @@ function RandomQuotes() {
       <h1>Random Quote Generator</h1>    
 
       <div id="quote-box">
-        <Text quote={randQuote} />
-        <Author author={randAuthor} />
-        <div className="bottom-spaceout"> 
-          <a href="https://www.twitter.com" id="tweet-quote"><FaTwitter/ > </a>
-          <button onClick={nextQuoteClick} id="new-quote">new quote</button>  
-        </div>        
+        <div className="text-author-container">
+          <Text quote={randQuote} />
+          <Author author={randAuthor} />
+        </div>
+
+        <div>
+          <div className="bottom-spaceout twitter-button-container"> 
+            <a href="https://twitter.com/intent/tweet" id="tweet-quote"><FaTwitter/ > </a>
+            <button onClick={nextQuoteClick} id="new-quote">new quote</button>  
+          </div>  
+        </div>
+              
       </div>
 
       <div className="footer">
         <h4>pmayc</h4>
       </div>
-      
+
     </div>
   );
 }
